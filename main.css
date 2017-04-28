@@ -1,0 +1,133 @@
+body{
+    font-family: 'Asar', serif;
+    min-width: 512px;
+    color: #525252;
+}
+.navbar{
+    border-radius: 0;
+}
+#logo{
+    margin: 30px 30px -15px !important;
+}
+.menu-item{
+    padding: 8px;
+    font-size: larger;
+    margin: 5px;
+    transition-duration: 1s;
+}
+.menu-item:hover{
+    cursor: pointer;
+    color: whitesmoke;
+    background-color: #333;
+}
+/*.modal{*/
+    /*padding-right: 0 !important;*/
+/*}*/
+/*.modal-dialog {*/
+    /*width: 95%;*/
+    /*height: 90%;*/
+    /*padding: 0 !important;*/
+    /*margin: 2.5% !important;*/
+/*}*/
+
+/*.modal-content {*/
+    /*height: 100%;*/
+/*}*/
+.logo_container h1 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.logo_container h3{
+    color: #6e6e6e;
+    margin-bottom: 40px;
+}
+.contact_entry{
+    margin-bottom: 10px;
+}
+.contact_entry .lab{
+    font-weight: bold;
+}
+.logo_container{
+    cursor: default;
+}
+
+.google_maps {
+    position: relative;
+    padding-bottom: 75%; // This is the aspect ratio
+height: 0;
+    overflow: hidden;
+}
+.google_maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+.google_maps_container{
+    width: 100%;
+    padding: 10px;
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover{
+    background-color: #333 !important;
+    color: aliceblue;
+    border-radius: 0;
+    border-width:0 !important;
+}
+.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br{
+    border-radius: 0;
+}
+.top_btm_30{
+    margin-top: 30px;
+    margin-bottom:30px;
+}
+#accordion div{
+    height: 230px;
+    padding-top: 50px;
+}
+ul#commercial_list{
+    font-size: large;
+    list-style: none
+
+}
+#commercial p{
+    font-size: large;
+    margin-bottom: 20px;
+}
+ul#commercial_list li {
+    display: inline-block;
+    padding: 20px;
+    color: whitesmoke;
+    background-color: #34434a;
+    margin: 5px;
+    font-size: large;
+    cursor: default;
+    transition-duration: 0.5s;
+}
+
+ul#commercial_list li:hover {
+    background-color: #be7b00;
+}
+
+#commercial img{
+    margin: 10px;
+}
+
+.hide{
+    display: none;
+}
+.dib{
+    display: inline-block !important;
+}
+.img_frame{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.thumbnail:hover{
+    background-color: #e5e5ec;
+    cursor: pointer;
+}
+.img_frame img{
+    height: 250px !important;
+}

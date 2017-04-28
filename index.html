@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>InsoGlass</title>
+  <script src="./lib/PhotoSwipe/photoswipe.js"></script>
+  <script src="./lib/PhotoSwipe/photoswipe-ui-default.js"></script>
+  <!--<link rel='stylesheet' href='lib/bootstrap/css/bootstrap-theme.css'/>-->
+  <link rel='stylesheet' href='lib/bootstrap/css/bootstrap.css'/>
+  <link rel='stylesheet' href='lib/Hover-master/css/hover.css'/>
+  <link rel='stylesheet' href='lib/PhotoSwipe/default-skin/default-skin.css'/>
+  <link rel='stylesheet' href='lib/PhotoSwipe/photoswipe.css'/>
+  <link rel='stylesheet' href='main.css'/>
+  <link rel='stylesheet' href='lib/jquery-ui-1.12.1.custom/jquery-ui.css'/>
+  <link href="https://fonts.googleapis.com/css?family=Asar" rel="stylesheet">
+  <script type="text/javascript" src="./lib/loader.js"></script>
+  <script src="./lib/jquery-3.1.1.js"></script>
+  <script src="./lib/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+  <script src="./lib/bootstrap/js/bootstrap.js"></script>
+  <script src="./lib/angular-1.6.2/angular.js"></script>
+  <script src="./myApp.js"></script>
+  <script src="./main.js"></script>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body ng-app="myApp" ng-controller="app">
+<nav class="navbar navbar-default">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img alt="Brand" src="imgs/logo.png" height="27">
+      <a class="navbar-brand" href="#">Inso</a>
+    </a>
+    <div class="pull-right menu-item" data-toggle="modal" data-target="#myModal2">
+      <span class="glyphicon glyphicon-map-marker"></span>
+      Location
+    </div>
+    <div class="pull-right menu-item" data-toggle="modal" data-target="#myModal">
+      <span class="glyphicon glyphicon-earphone"></span>
+      Contact Us
+    </div>
+  </div>
+</nav>
+
+
+<div class="container text-center">
+  <div class="logo_container">
+    <div class="col-xs-12">
+      <img id="logo" src="imgs/logo.png" height="90">
+      <h1>INSO GLASS</h1>
+      <h3>416.723.3318 | 专业玻璃安装</h3>
+    </div>
+  </div>
+  <ul id="sub_menu" class="nav nav-tabs">
+    <li class="active" data-target="commercial"><a href="#">Commercial Projects</a></li>
+    <li data-target="residential"><a href="#">Residential Projects</a></li>
+    <li data-target="projects"><a href="#">Projects</a></li>
+  </ul>
+</div>
+<div class="container">
+  <div class="row category" id="residential">
+    <div class="col-md-8 top_btm_30">
+      <div id="accordion">
+
+        <h3>Curtain Wall</h3>
+        <div><p>INSO provides Curtain Wall consulting, engineering, fabrication, and installation with nearly 10 years
+          of experience. There are no projects too small or too large for INSO. Please contact us for additional
+          information.</p>
+          <img src="imgs/small2.jpg"> <img src="imgs/small1.jpg"> <img src="imgs/small3.jpg">
+        </div>
+
+        <h3>Store Fronts</h3>
+        <div><p>INSO installs Store Fronts of all types. If an owner or architect can dream it, INSO can fabricate and
+          install it. We also provide consulting and design for the more complex systems. Please contact us for
+          additional information</p>
+          <img src="imgs/small4.jpg"> <img src="imgs/small5.jpg">
+        </div>
+        <h3>Skylights</h3>
+        <div><p>INSO supplies and installs all types of metal-framed glass skylights for residential and commercial
+          applications, including sloped and flat skylights. Please contact us for additional information</p>
+          <img src="imgs/small6.jpg">
+        </div>
+
+        <h3>Windows</h3>
+        <div><p>INSO provides Curtain Wall consulting, engineering, fabrication, and installation with nearly 10 years
+          of experience. There are no projects too small or too large for INSO. Please contact us for additional
+          information.</p>
+          <img src="imgs/small2.jpg"> <img src="imgs/small1.jpg"> <img src="imgs/small3.jpg">
+        </div>
+
+      </div>
+    </div>
+    <div class="col-md-4 top_btm_30">
+      <div ng-repeat="(label, value) in contact_info">
+        <div class="row contact_entry">
+          <span ng-bind="label" class="col-xs-6 col-sm-5 lab"></span><span ng-bind="value"></span>
+
+        </div>
+      </div>
+      <br>
+      <div class="google_maps">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2878.845815436608!2d-79.30255848406874!3d43.81755747911596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4d3f9fcc35ea5%3A0x68d55d0c59993a8!2s31+Passmore+Ave+%2331%2C+Scarborough%2C+ON+M1V+3H4!5e0!3m2!1sen!2sca!4v1492659577689"
+                width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="row category" id="commercial">
+    <div class="col-md-8 top_btm_30">
+      <br>
+      <p>INSO provides Curtain Wall consulting, engineering, fabrication, and installation
+        with nearly 10 years of experience. There are no projects too small or too large for INSO.
+        Please contact us for additional information.
+      </p>
+      <ul id="commercial_list" class="text-center">
+        <li>Custom Showers</li>
+        <li>Mirrors</li>
+        <li>IG Replacements</li>
+        <li>Deck Railing</li>
+      </ul>
+      <div class="text-center">
+        <img src="imgs/small2.jpg"> <img src="imgs/small1.jpg"> <img src="imgs/small3.jpg">
+      </div>
+    </div>
+    <div class="col-md-4 top_btm_30">
+      <div ng-repeat="(label, value) in contact_info">
+        <div class="row contact_entry">
+          <span ng-bind="label" class="col-xs-6 col-sm-5 lab"></span><span ng-bind="value"></span>
+        </div>
+      </div>
+      <br>
+      <div class="google_maps">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2878.845815436608!2d-79.30255848406874!3d43.81755747911596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4d3f9fcc35ea5%3A0x68d55d0c59993a8!2s31+Passmore+Ave+%2331%2C+Scarborough%2C+ON+M1V+3H4!5e0!3m2!1sen!2sca!4v1492659577689"
+                width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  <div class="row category" id="projects">
+    <div class="col-xs-12 top_btm_30 text-center">
+      <div ng-repeat="proj_img_obj in proj_img_objs track by $index" class="dib img_frame thumbnail"
+           data-toggle="modal" data-target="#myModal3" ng-show="proj_img_obj" ng-click="openPhotoSwipe(proj_img_obj)">
+        <img class="dib" ng-src="./imgs/projects/{{proj_img_obj.imgs[0]}}">
+        <h4 ng-bind="proj_img_obj.name"></h4>
+        <div class="hide">
+          <span ng-bind="$index"></span> <span class="" ng-bind="proj_img_obj | json"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+<!-- Contact Us Modal -->
+<div class="modal fade" id="myModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close" data-dismiss="modal"><span>&times;</span></span>
+        <h4>Contact Us</h4>
+      </div>
+      <div class="modal-body">
+        <div ng-repeat="(label, value) in contact_info">
+          <div class="row contact_entry">
+            <span ng-bind="label" class="col-xs-3 lab"></span><span ng-bind="value" class="col-xs-9"></span>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Location Modal -->
+<div class="modal fade" id="myModal2" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close" data-dismiss="modal"><span>&times;</span></span>
+        <h4>Location</h4>
+      </div>
+      <div class="modal-body google_maps_container">
+        <div class="google_maps">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2878.845815436608!2d-79.30255848406874!3d43.81755747911596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4d3f9fcc35ea5%3A0x68d55d0c59993a8!2s31+Passmore+Ave+%2331%2C+Scarborough%2C+ON+M1V+3H4!5e0!3m2!1sen!2sca!4v1492659577689"
+                  width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="pswp__bg"></div>
+  <div class="pswp__scroll-wrap">
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    <div class="pswp__ui pswp__ui--hidden">
+      <div class="pswp__top-bar">
+        <div class="pswp__counter"></div>
+        <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+        <button class="pswp__button pswp__button--share" title="Share"></button>
+        <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+        <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+        <div class="pswp__preloader">
+          <div class="pswp__preloader__icn">
+            <div class="pswp__preloader__cut">
+              <div class="pswp__preloader__donut"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+        <div class="pswp__share-tooltip"></div>
+      </div>
+      <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+      <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+      <div class="pswp__caption">
+        <div class="pswp__caption__center"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

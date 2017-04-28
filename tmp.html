@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script src="./lib/jquery-3.1.1.js"></script>
+</head>
+<body>
+<img src="imgs/projects/J_Addison_school-2-1.jpg"/>
+<!--<img src="imgs/projects/beer_store_door_16-1.jpg"/>-->
+<!--<img src="imgs/projects/beer_store_door_16-2.jpg"/>-->
+<!--<img src="imgs/projects/bridalwood_elevator-8-1.jpg"/>-->
+<!--<img src="imgs/projects/bridalwood_elevator-8-2.jpg"/>-->
+<!--<img src="imgs/projects/bridalwood_elevator-8-3.jpg"/>-->
+<!--<img src="imgs/projects/bridalwood_elevator-8-4.jpg"/>-->
+<!--<img src="imgs/projects/bridalwood_elevator-8-5.jpg"/>-->
+<!--<img src="imgs/projects/bridalwood_elevator-8-6.jpg"/>-->
+<!--<img src="imgs/projects/bridalwood_extension-18-1.jpg"/>-->
+<!--<img src="imgs/projects/bridalwood_extension-18-2.jpg"/>-->
+<!--<img src="imgs/projects/bridalwood_extension-18-3.jpg"/>-->
+<!--<img src="imgs/projects/bridalwood_extension-18-4.jpg"/>-->
+<!--<img src="imgs/projects/bridalwood_extension-18-5.jpg"/>-->
+<!--<img src="imgs/projects/condo_window-5-1.jpg"/>-->
+<!--<img src="imgs/projects/condo_window-5-2.jpg"/>-->
+<!--<img src="imgs/projects/congee_star_storefront-11-1.jpg"/>-->
+<!--<img src="imgs/projects/congee_star_storefront-11-10.jpg"/>-->
+<!--<img src="imgs/projects/congee_star_storefront-11-11.jpg"/>-->
+<!--<img src="imgs/projects/congee_star_storefront-11-12.jpg"/>-->
+<!--<img src="imgs/projects/congee_star_storefront-11-2.jpg"/>-->
+<!--<img src="imgs/projects/congee_star_storefront-11-3.jpg"/>-->
+<!--<img src="imgs/projects/congee_star_storefront-11-4.jpg"/>-->
+<!--<img src="imgs/projects/congee_star_storefront-11-5.jpg"/>-->
+<!--<img src="imgs/projects/congee_star_storefront-11-6.jpg"/>-->
+<!--<img src="imgs/projects/congee_star_storefront-11-7.jpg"/>-->
+<!--<img src="imgs/projects/congee_star_storefront-11-8.jpg"/>-->
+<!--<img src="imgs/projects/congee_star_storefront-11-9.jpg"/>-->
+<!--<img src="imgs/projects/dt_storefront-12-1.jpg"/>-->
+<!--<img src="imgs/projects/dt_storefront-12-2.jpg"/>-->
+<!--<img src="imgs/projects/dt_storefront-12-3.jpg"/>-->
+<!--<img src="imgs/projects/dt_storefront-17-1.jpg"/>-->
+<!--<img src="imgs/projects/dt_storefront-17-2.jpg"/>-->
+<!--<img src="imgs/projects/dt_storefront-17-3.jpg"/>-->
+<!--<img src="imgs/projects/dt_storefront-17-4.jpg"/>-->
+<!--<img src="imgs/projects/dt_storefront-17-5.jpg"/>-->
+<!--<img src="imgs/projects/four_season_sunroom-10-1.jpg"/>-->
+<!--<img src="imgs/projects/four_season_sunroom-10-2.jpg"/>-->
+<!--<img src="imgs/projects/four_season_sunroom-10-3.jpg"/>-->
+<!--<img src="imgs/projects/glass_showcase-0-1.jpg"/>-->
+<!--<img src="imgs/projects/house_porch-6-1.jpg"/>-->
+<!--<img src="imgs/projects/house_porch-6-2.jpg"/>-->
+<!--<img src="imgs/projects/house_porch-6-3.jpg"/>-->
+<!--<img src="imgs/projects/house_railing-4-1.jpg"/>-->
+<!--<img src="imgs/projects/house_railing-4-2.jpg"/>-->
+<!--<img src="imgs/projects/office_storefront-14-1.jpg"/>-->
+<!--<img src="imgs/projects/office_storefront-14-2.jpg"/>-->
+<!--<img src="imgs/projects/office_storefront-14-3.jpg"/>-->
+<!--<img src="imgs/projects/squareone-1-1.jpg"/>-->
+<!--<img src="imgs/projects/squareone-1-2.jpg"/>-->
+<!--<img src="imgs/projects/storefront-9-1.jpg"/>-->
+<!--<img src="imgs/projects/storefront-9-2.jpg"/>-->
+<!--<img src="imgs/projects/tridel_condo-3-1.jpg"/>-->
+<!--<img src="imgs/projects/tridel_condo-3-2.jpg"/>-->
+<!--<img src="imgs/projects/tridel_condo-3-3.jpg"/>-->
+
+<script>
+  $(function () {
+    $("img").each(function(idx, elem){
+      var myImage = new Image();
+      myImage.src = $(elem).attr("src");
+      myImage.onload = function(){
+        console.log(this.src + ", " + this.width + ", " + this.height)
+      };
+
+    })
+  })
+</script>
+</body>
+</html>
